@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="logintobooking">
+  	<include name="login"></include>
+  	<include name="details"></include>
+  </define>
+  <run>
+  <include name="logintobooking"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.features.testng.Groups_Of_Groups"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

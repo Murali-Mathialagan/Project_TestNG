@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="pass" value="Abc@"/>
+    <parameter name="user" value="murali"/>
+    <classes>
+      <class name="com.features.testng.Single_Data_Parsing">
+        <methods>
+          <include name="username_Password"/>
+        </methods>
+      </class> <!-- com.features.testng.Single_Data_Parsing -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
